@@ -7,17 +7,18 @@
 //
 
 import UIKit
+import MyLib
 
 class ViewController: UIViewController {
 
+    var home = HomeView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        print("This is Example View")
+        view.backgroundColor = .green
+      
+        home.viewDidLoad()
     }
 
 }
